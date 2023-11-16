@@ -5,12 +5,35 @@
     padding: 0;
 }
 
+body {
+    background: #ffffff;
+    font-family:"Proxima Nova", sans-serif;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Proxima Nova", sans-serif;
+    src: url(../assets/AnyConv.com__ProximaNova-Regular_2607783814[2260].woff) format('woff'); 
+}
+
+@font-face {
+    font-family: "Proxima Nova", sans-serif;
+    src: url(../assets/AnyConv.com__ProximaNova-Bold_1760577842[2252].woff) format("woff");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(../assets/AnyConv.com__ProximaNova-Medium_2770618388[2258].woff2);
+    font-weight: 400;
+}
+
 header {
     display: flex;
     flex-direction: row;
     justify-content: start;
     gap: 2em;
-    background: #F7A100;
+    background: #006199;
     padding: 1em 1em;
 }
 
@@ -21,7 +44,7 @@ header {
 }
 
 nav { 
-    background: #f8c463;
+    background: #60C5F8;
     width: 13.5em;
 }
 
@@ -57,7 +80,8 @@ p {
     font-size: 1em;
 }
 .heart, .account-human , .filled-heart {
-    color: #0071B3;
+    color:#F7A100
+    ;
     height: 2em;
     margin: auto 5px;
     margin-left: 2em;
@@ -71,7 +95,8 @@ p {
 }
 
 .theme-toggle, .theme-toggle-contrast {
-    color: #0071B3;
+    color: #F7A100
+    ;
     height: 2em;
     margin: auto 5px;
     margin-left: 2em;
@@ -91,13 +116,13 @@ p {
 
 .search-button {
     margin-left: 2em;
-    background: #0071B3;
+    background: #F7A100
+    ;
     border: none;
     box-shadow: none;
     color: #ffffff;
     cursor: pointer;
     height: 3em;
-    opacity: 0.9;
     width: 5em;
 }
 
@@ -122,11 +147,13 @@ form button:active {
 }
 
 .add-user {
-    color: #0071B3;
+    color: #F7A100
+    ;
     height: 2em;
     margin: 2em;
     background: none;
-    border: solid 0.2em #0071B3;
+    border: solid 0.2em #F7A100
+    ;
     border-radius: 50%;
     aspect-ratio: 1/1;
     cursor: pointer;
@@ -134,14 +161,13 @@ form button:active {
 
 .popup {
     margin-left: 2em;
-    background: #0071B3;
+    background: #F7A100
+    ;
     border: none;
     box-shadow: none;
     color: #ffffff;
     cursor: pointer;
     height: 3em;
-    opacity: 0.9;
-    filter: alpha(opacity=90);
     width: 10em;
 }
 
@@ -159,4 +185,10 @@ form button:active {
     background-color: transparent;
     color:#F7A100;
 } 
+
+.place-comment {
+    background: none;
+    border: none;
+    margin: 2em;
+}
 
