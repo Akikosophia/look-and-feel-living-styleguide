@@ -42,3 +42,27 @@ main {
     background-color: #ffffff;
     width: 100%;
 }
+
+pre {
+    background-color: #f4f4f4;
+    width: 50em;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.4;
+    overflow-x: auto;
+}
+
+div.scroll-container {
+    background-color: #E6F2F7;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+    margin: 40px;
+  }
+
