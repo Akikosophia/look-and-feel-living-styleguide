@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 2em;
+    background: #F7A100;
+    padding: 1em 1em;
+}
+
+.lay-out {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+nav { 
+    background: #f8c463;
+    width: 13.5em;
+}
+
+a {
+    text-decoration: none;
+    line-height: 1.5em;
+    color: black;  
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em;
+}
+
+main {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+main h1 {
+    margin: 1em 2em 1em 1em;
+}
+
+main h2 {
+    margin: 1em;
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+p {
+    margin: 1em;
+    font-size: 1em;
+}
+.heart, .account-human , .filled-heart {
+    color: #0071B3;
+    height: 2em;
+    margin: auto 5px;
+    margin-left: 2em;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 2em;
+}
+
+.theme-toggle, .theme-toggle-contrast {
+    color: #0071B3;
+    height: 2em;
+    margin: auto 5px;
+    margin-left: 2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.colour-modes {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    padding: 1em 1em 0 1em;
+    gap: 1em;
+}
+
+.search-button {
+    margin-left: 2em;
+    background: #0071B3;
+    border: none;
+    box-shadow: none;
+    color: #ffffff;
+    cursor: pointer;
+    height: 3em;
+    opacity: 0.9;
+    width: 5em;
+}
+
+form button {
+    background: none;
+    border-radius: 50%;
+    border: none;
+    aspect-ratio: 1 / 1;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    padding:0.1em;
+    transition: all 0.2s ease;
+}
+
+form button:active {
+    transform: scale(0.96);
+}
+
+.account-human {
+    margin-left: 2em;
+}
+
+.add-user {
+    color: #0071B3;
+    height: 2em;
+    margin: 2em;
+    background: none;
+    border: solid 0.2em #0071B3;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.popup {
+    margin-left: 2em;
+    background: #0071B3;
+    border: none;
+    box-shadow: none;
+    color: #ffffff;
+    cursor: pointer;
+    height: 3em;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    width: 10em;
+}
+
+.close-button {
+    background-color: transparent;
+    border: 0em;
+    color: #333333;
+    font-size: 2em;
+    transition: all 0.2 ease-in;
+    cursor: pointer;
+    margin: 2em;
+}
+
+.close-button:hover {
+    background-color: transparent;
+    color:#F7A100;
+} 
+
