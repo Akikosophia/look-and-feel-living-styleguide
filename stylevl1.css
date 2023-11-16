@@ -10,7 +10,7 @@ header {
     flex-direction: row;
     justify-content: start;
     gap: 2em;
-    background: #c3c3c3;
+    background: #de9000;
     padding: 1em 1em;
 }
 
@@ -21,8 +21,9 @@ header {
 }
 
 nav { 
-    background: #dcdcdc;
+    background: #f7a100;
     width: 13.5em;
+    height: 40em;
 }
 
 a {
@@ -39,8 +40,9 @@ ul {
 }
 
 main {
-    background-color: #ffffff;
+    background-color: #f8c463;
     width: 100%;
+    padding: 2em;
 }
 
 
