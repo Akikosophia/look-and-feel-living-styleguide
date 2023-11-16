@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    font: Proxima nova;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2em;
+    color: #333;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(../assets/AnyConv.com__ProximaNova-Regular_2607783814[2339].woff2);
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(../assets/AnyConv.com__ProximaNova-Semibold_3872794340.woff2);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(../assets/AnyConv.com__ProximaNova-Medium_2770618388[2258].woff2);
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 2em;
+    background: #f7a100;
+    padding: 1em 1em;
+}
+
+.lay-out {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+nav { 
+    background: #f8c463;
+    width: 13.5em;
+}
+
+a {
+    text-decoration: none;
+    line-height: 1.5em;
+    color: black;
+    
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em;
+}
+
+main {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 2em;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+.code-images {
+    display: flex;
+    flex-direction: row;
+    height: 4em;
+}
