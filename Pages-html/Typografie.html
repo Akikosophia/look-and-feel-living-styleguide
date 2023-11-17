@@ -11,7 +11,7 @@
     <header>
 
         <img src="https://assets.fstatic.nl/master-76026/assets/components/logo/fundawonen-logo.svg" height="36">   <!-- logo -->
-        <h1>Living styleguide</h1>
+        <h1> Living styleguide </h1>
 
     </header>
 
@@ -39,13 +39,17 @@
 
             <h2> Proxima Nova </h2>
             <h3> Gebruik</h3>
-        <ul>
+        <ol>
            <li>Proxima Nova Regular voor body teksten</li>
-           <li>Proxima Nova SemiBold voor koppen en quotes</li> 
+           <li>Gebruik Proxima Nova Regular bij platte tekst, tekst links en opsommingen</li>
+           <li>Proxima Nova SemiBold voor koppen en quotes </li> 
+           <li>Gebruik Proxima Nova SemiBold bij titels, buttons en namen</li>
            <li>Voor print kies je een variant tussen Light en Extra Bold</li> 
+           <li>Gebruik voor de platte tekst altijd de grootte van 16 pixels </li>
            <li>Hoe korter het woord of de zin hoe groter de tekst kan zijn</li> 
-        </ul>
-      
+        </ol>
+
+        
             <h2> Heading 1</h2>
         <h1> Mijn favorieten huizen</h1>    
 
@@ -66,16 +70,22 @@
           &lt;h3&gt; Mijn favorieten huizen &lt;/h3&gt;
 
           body {
-            font-family: 'proxima nova'
+            font-family: 'proxima nova';
           }
 
-          h1,h2,h3 {
-            font-weight: bold;
+          @font-face {
+            font-family: "Proxima Nova A Semibold";
+            src: url("https://db.onlinewebfonts.com/t/264e2ce2df4ac93e29576716c566f827.woff2") format("woff2");
           }
-         
+          
+          h1 {
+            font-family: "Proxima Nova A Semibold";
+          }
+        
           p {
             font-size: 1em;
           }
+
             </code></pre>
                 </section>
 

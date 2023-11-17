@@ -10,7 +10,7 @@ header {
     flex-direction: row;
     justify-content: start;
     gap: 2em;
-    background: #de9000;
+    background: #c3c3c3;
     padding: 1em 1em;
 }
 
@@ -21,9 +21,8 @@ header {
 }
 
 nav { 
-    background: #f7a100;
+    background: #dcdcdc;
     width: 13.5em;
-    height: 40em;
 }
 
 a {
@@ -40,11 +39,20 @@ ul {
 }
 
 main {
-    background-color: #f8c463;
+    background-color: #ffffff;
     width: 100%;
-    padding: 2em;
 }
 
+pre {
+    background-color: #f4f4f4;
+    width: 50em;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.4;
+    overflow-x: auto;
+}
 
 div.scroll-container {
     background-color: #E6F2F7;
@@ -55,28 +63,6 @@ div.scroll-container {
   
   div.scroll-container img {
     padding: 10px;
+    margin: 40px;
   }
 
-  .slider {
-    width: 300px;
-    height: 200px;
-    display: flex;
-    overflow: hidden;
-    object-fit: cover;
-    border: 2px solid white;
-
-}
-
-  
-.clickable-images {
-    margin-top: 3px;
-    padding: 3px;
-}
-
-.clickable-images img {
-    margin: 3px;
-    width: 93px;
-    height: 80px;
-    object-fit: cover;
-    border: 2px solid white;
-}

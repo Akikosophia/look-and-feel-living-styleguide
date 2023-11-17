@@ -6,7 +6,38 @@
 }
 
 body {
-    font-family: 'proxima nova' sans-serif;
+    font-family: 'Proxima Nova';
+}
+
+@font-face {
+    font-family: "Proxima Nova A Semibold";
+    src: url("https://db.onlinewebfonts.com/t/264e2ce2df4ac93e29576716c566f827.woff2") format("woff2");
+}
+
+h1 {
+    padding-left: 10px;
+    padding-top: 10px;
+    /* font-family: "Proxima Nova A Semibold"; */
+}
+
+h2 {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+h3 {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+p {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+ol {
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 header {
