@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funda living styleguide</title>
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="../Pages-styles/style-navigatieinteractie.css">
 </head>
 <body>
     <header>
@@ -31,8 +31,81 @@
 
 
     <main>
-        <!-- Hier inhoud styleguide -->
+    <br>
+    <!-- Hier inhoud styleguide -->
+    <h1>Navigatie & interactie</h1>
+    <hr>
+    <br>
+    <br>
+    <p>Er wordt een carousel en clickable images gebruikt om verschillende images van het huis om te laten zien.</p>
+    <br>
+    <br>
+    <h2>Voorbeeld 1:</h2>
+    <br>
+    <h2>Carousel</h2>
+    <br>
+    <br>
+    <img src="../assets/Carousel.png" width="800" alt="grijstinten palette">
+    <br>
+    <br>
+
+    <h3>De code die er wordt gebruikt zijn:</h3>
+    <br>
+
+    <pre>
+
+     &lt;div class="scroll-container"&gt;
+
+       &lt;img class="slide-images" src="assets/1.jpg" alt="foto1"&gt;
+       &lt;img class="slide-images" src="assets/2.jpg" alt="foto2"&gt;
+       &lt;img class="slide-images" src="assets/3.jpg" alt="foto3"&gt;
+       &lt;img class="slide-images" src="assets/4.jpg" alt="foto4"&gt;
+       &lt;img class="slide-images" src="assets/5.jpg" alt="foto5"&gt;
+       &lt;img class="slide-images" src="assets/6.jpg" alt="foto6"&gt;
+       &lt;img class="slide-images" src="assets/7.jpg" alt="foto7"&gt;
+       &lt;img class="slide-images" src="assets/8.jpg" alt="foto8"&gt;
+
+     &lt;/div&gt;
          
+    </pre>
+    <br>
+    <br>
+
+    <h2>Voorbeeld 2:</h2>
+    <br>
+    <h2>Clicable Images</h2>
+    <br>
+    <br>
+    <img src="../assets/Clickable Images.png" width="400" alt="grijstinten palette">
+    <br>
+    <br>
+
+    <h3>De code die er wordt gebruikt zijn:</h3>
+    <br>
+
+    <pre>
+     &lt;article&gt;
+
+       &lt;div class="article-container"&gt;
+
+       &lt;div class="slider"&gt;
+         &lt;img id="img1" src="assets/huis 1.png" alt=""&gt;
+         &lt;img id="img2" src="assets/Woonkamer.png" alt=""&gt;
+         &lt;img id="img3" src="assets/Keuken bar.png" alt=""&gt;
+
+       &lt;/div&gt;
+                
+        &lt;div class="clickable-images"&gt;
+         &lt;a href="#img1"&gt;&lt;img src="assets/huis 1.png" alt=""&gt;&lt;/a&gt;
+         &lt;a href="#img2"&gt;&lt;img src="assets/Woonkamer.png" alt=""&gt;&lt;/a&gt;
+         &lt;a href="#img3"&gt;&lt;img src="assets/Keuken bar.png" alt=""&gt;&lt;/a&gt;
+
+       &lt;/div&gt;
+
+     &lt;/article&gt;    
+    </pre>
+        
+
     </main>
 </div>
 </body>
