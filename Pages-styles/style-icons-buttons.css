@@ -85,13 +85,13 @@ h2 {
 
 h3 {
     margin: 0em 0em 1em 1em;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: lighter;
 }
 
 h4 {
     margin: 0em 0em 1em 1em;
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
@@ -106,6 +106,14 @@ p {
     height: 2em;
     margin: auto 5px;
     margin-left: 2em;
+}
+
+.filled-heart {
+position: absolute;
+left: 8em;
+top: 32.5em;
+
+
 }
 
 .socials {
