@@ -28,12 +28,17 @@ body {
     font-weight: 400;
 }
 
+img {
+    margin: 1em;
+}
+
+
 header {
     display: flex;
     flex-direction: row;
     justify-content: start;
     gap: 2em;
-    background: #006199;
+    background: #F7A100;
     padding: 1em 1em;
 }
 
@@ -41,10 +46,11 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: start;
+    line-height: 3em;
 }
 
 nav { 
-    background: #60C5F8;
+    background: #F8C463;
     width: 13.5em;
 }
 
@@ -65,23 +71,38 @@ main {
     width: 100%;
 }
 
-main h1 {
-    margin: 1em 2em 1em 1em;
+h1 {
+    margin: 0em;
+    font-weight: bold;
 }
 
-main h2 {
-    margin: 1em;
+h2 {
+    margin-left: 1em;
+    margin-top: 2em;
     font-size: 1.2em;
-    font-weight: 100;
+    font-weight: bold;
+}
+
+h3 {
+    margin: 0em 0em 1em 1em;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+h4 {
+    margin: 0em 0em 1em 1em;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 p {
     margin: 1em;
+    margin-top: 0;
     font-size: 1em;
 }
+
 .heart, .account-human , .filled-heart {
-    color:#F7A100
-    ;
+    color: #0071B3;
     height: 2em;
     margin: auto 5px;
     margin-left: 2em;
@@ -92,11 +113,11 @@ p {
     flex-direction: row;
     justify-content: left;
     gap: 2em;
+    cursor: pointer;
 }
 
 .theme-toggle, .theme-toggle-contrast {
-    color: #F7A100
-    ;
+    color: #0071B3;
     height: 2em;
     margin: auto 5px;
     margin-left: 2em;
@@ -116,8 +137,8 @@ p {
 
 .search-button {
     margin-left: 2em;
-    background: #F7A100
-    ;
+    margin-bottom: 1em;
+    background:#0071B3;
     border: none;
     box-shadow: none;
     color: #ffffff;
@@ -147,22 +168,21 @@ form button:active {
 }
 
 .add-user {
-    color: #F7A100
-    ;
+    color:#0071B3;
     height: 2em;
     margin: 2em;
+    margin-top: 1em;
     background: none;
-    border: solid 0.2em #F7A100
-    ;
+    border: solid 0.2em #0071B3;
     border-radius: 50%;
     aspect-ratio: 1/1;
     cursor: pointer;
 }
 
 .popup {
+    margin: 1em;
     margin-left: 2em;
-    background: #F7A100
-    ;
+    background: #0071B3;
     border: none;
     box-shadow: none;
     color: #ffffff;
@@ -178,7 +198,8 @@ form button:active {
     font-size: 2em;
     transition: all 0.2 ease-in;
     cursor: pointer;
-    margin: 2em;
+    margin: 1em;
+    margin-left: 2em;
 }
 
 .close-button:hover {
@@ -189,6 +210,9 @@ form button:active {
 .place-comment {
     background: none;
     border: none;
-    margin: 2em;
+    margin: 1em;
+    margin-left: 2em;
+    cursor: pointer;
 }
+
 
