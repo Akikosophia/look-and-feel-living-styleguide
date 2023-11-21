@@ -41,6 +41,7 @@ ul {
 main {
     background-color: #ffffff;
     width: 100%;
+    padding: 30px;
 }
 
 pre {
@@ -52,6 +53,26 @@ pre {
     font-size: 16px;
     line-height: 1.4;
     overflow-x: auto;
+}
+
+img {
+    margin: 10px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin: 10px;
+}
+
+h3 {
+    margin: 10px;
+}
+
+p {
+    margin: 10px;
 }
 
 div.scroll-container {
