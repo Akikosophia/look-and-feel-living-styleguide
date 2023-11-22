@@ -1,11 +1,12 @@
 * {
     box-sizing: border-box;
     font-family: 'proxima nova' sans-serif;
+    font-size: var(--font-p);
     list-style: none;
     margin: 0;
     padding: 0;
     line-height: 1.2em;
-    color: #333;
+    color: var(--clr-dark);
 }
 
 body {
@@ -34,7 +35,7 @@ header {
     flex-direction: row;
     justify-content: start;
     gap: 2em;
-    background: #f7a100;
+    background: var(--clr-primair-50);
     padding: 1em 1em;
 }
 
@@ -45,15 +46,14 @@ header {
 }
 
 nav { 
-    background: #f8c463;
+    background: var(--clr-primair-80);
     width: 13.5em;
 }
 
 a {
     text-decoration: none;
     line-height: 1.5em;
-    color: black;
-    
+    color: var(--clr-dark); 
 }
 
 ul {
@@ -63,7 +63,7 @@ ul {
 }
 
 main {
-    background-color: #ffffff;
+    background-color: var(--clr-light);
     width: 100%;
     padding: 2em;
 }
@@ -76,13 +76,74 @@ main {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: var(--font-h1);
 }
 
 h2 {
-    font-size: 1.6em;
+    font-size: var(--font-h2);
 }
 
 h3 {
-    font-size: 1.2em;
+    font-size: var(--font-h3);
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--clr-primair-50);
+}
+.theme-toggle-contrast {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--clr-primair-50);
+}
+.colour-modes {
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: end;
+    padding: 1em 1em 0 1em;
+}
+
+/* Color palette */
+:root {
+    --clr-block: #ededed;
+    --clr-blockhover: #dedede;
+    --clr-light:#FFFFFF;
+    --clr-gray: #666666;
+    --clr-dark: #1F2123;
+    --clr-primair-80: #DE9000;
+    --clr-primair-50: #F7A100;
+    --clr-icon: #DE9000;
+    --clr-heart: #f03c2f;
+    --clr-secundair-50:#0071B3;
+    --clr-secundair-15: #E6F2F7;
+    --font-p: 16px;
+    --font-h1: 32px;
+    --font-h2: 25px;
+    --font-h3: 19px;
+}
+.dark-mode {
+    --clr-dark: #fff;
+    --clr-light: #1F2123;
+    --clr-block: #333;
+    --clr-blockhover: #4a4a4a;
+    --clr-gray: #999999;
+    --clr-secundair-50:#60C5F8;
+    --clr-secundair-15: #006199;
+}
+.contrast-mode {
+    --clr-light:#FFFFFF;
+    --clr-block: #ededed;
+    --clr-blockhover: #999999;
+    --clr-gray: #525252;
+    --clr-primair-50: #53241B;
+    --clr-icon: #53241B;
+    --clr-primair-80: #321610;
+    --clr-dark: #60C5F8;
+    --clr-secundair-50: #115D92;
+    --clr-heart: #DB1D10;
 }
