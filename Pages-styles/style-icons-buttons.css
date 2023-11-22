@@ -11,6 +11,23 @@
     --clr-primary: #F7A100;
     --clr-primary-2:#0071B3;
     --clr-secondary: #F8C463; 
+    --font-p: 16px; 
+    --font-h: 32px;
+}
+
+.dark-mode {
+    --clr-dark: #FFFFFF;
+    --clr-light: #333;
+    --clr-primary-2:#60C5F8;
+}
+
+.contrast-mode {
+    --clr-dark: #FFFFFF;
+    --clr-light:#FFFFFF;
+    --clr-secondary: #53241B;
+    --clr-primary: #321610;
+    --clr-primary-2: #115D92;
+    
 }
 
 body {
@@ -80,33 +97,38 @@ main {
 }
 
 h1 {
-    margin: 0em;
-    font-weight: bold;
+    color: var(--clr-dark);
+    margin: 0.5em;
+    font-size: var(--font-h);
 }
 
 h2 {
+    color: var(--clr-dark);
     margin-left: 1em;
-    margin-top: 2em;
-    font-size: 1.5em;
+    margin-top: 1em;
+    font-size: var(--font-h);
     font-weight: bold;
 }
 
 h3 {
+    color: var(--clr-dark);
     margin: 0em 0em 1em 1em;
-    font-size: 1.2em;
-    font-weight: lighter;
+    font-size: var(--font-p);
+    font-weight: bold;
 }
 
 h4 {
+    color: var(--clr-dark);
     margin: 0em 0em 1em 1em;
-    font-size: 1.5em;
+    font-size: var(--font-h);
     font-weight: bold;
 }
 
 p {
+    color: var(--clr-dark);
     margin: 1em;
     margin-top: 0;
-    font-size: 1em;
+    font-size: var(--font-p);
 }
 
 .heart, .account-human , .filled-heart {
@@ -119,7 +141,7 @@ p {
 .filled-heart {
 position: absolute;
 left: 8em;
-top: 32.5em;
+top: 31em;
 }
 
 .socials {
