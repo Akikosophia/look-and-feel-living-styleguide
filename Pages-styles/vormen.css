@@ -6,13 +6,43 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+:root{ 
+    --PrimaryColor0: #F7A100;
+    --PrimaryColor10: #F8c463;
+    --SecondaryBackground: #FFFFFF;
+    --Gallery0: #EDEDED;
+    --Gallery1: #CCCCCC;
+    --TextColor: #333333;
+    --TextAlt: #0071B3;
+    --fontP: 16px;
+    --fontH1: 34px;
+    --fontH3: 24px;
+}
+
+/* @media (prefers-color-scheme: dark) {
+    :root{ 
+        --PrimaryColor0: #333333;
+        --TextColor: #F7A100;
+    }
+} */
+
+
+.cirkel img{
+    height: 300px;
+    width: 450px;
+}
+
+
+
 header {
     display: flex;
     flex-direction: row;
     justify-content: start;
     gap: 2em;
-    background: #c3c3c3;
+    background: var(--PrimaryColor0);
     padding: 1em 1em;
+    font-size: var(--fontH1);
+    
 }
 
 .lay-out {
@@ -22,14 +52,17 @@ header {
 }
 
 nav { 
-    background: #dcdcdc;
+    background: var(--PrimaryColor10);
     width: 13.5em;
+    font-size: var(--fontP);
 }
 
 a {
     text-decoration: none;
     line-height: 1.5em;
-    color: black;
+    color: var(--TextColor);
+    font-size: var(--fontP);
+    font-size: var(--fontP);
     
 }
 
@@ -40,10 +73,17 @@ ul {
 }
 
 main {
-    background-color: #ffffff;
+    background-color: var(--SecondaryBackground);
     width: 100%;
 }
 
+h1{
+    font-size: var(--fontH1);
+}
+
+h3{
+    font-size: var(--fontH3);
+}
 
 .toepassing img{
 margin-top: 15em;
