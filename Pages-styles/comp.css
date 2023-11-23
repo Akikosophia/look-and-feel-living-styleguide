@@ -6,14 +6,56 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 2em;
-    background: #c3c3c3;
-    padding: 1em 1em;
+    :root{ 
+        --PrimaryColor0: #F7A100;
+        --PrimaryColor10: #F8c463;
+        --SecondaryBackground: #FFFFFF;
+        --Gallery0: #EDEDED;
+        --Gallery1: #CCCCCC;
+        --TextColor: #333333;
+        --TextAlt: #0071B3;
+        --fontP: 16px;
+        --fontH1: 34px;
+        --fontH3: 24px;
+    }
+
+    
+    /* Positie, afmetingen en kleur van de header*/
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 2em;
+        background: var(--PrimaryColor0);
+        padding: 1em 1em;
+        font-size: var(--fontH1);
+        
+    }
+
+
+
+/* positie en kleur van de nevigatie aan de linkerkant*/
+
+
+nav { 
+    background: var(--PrimaryColor10);
+    width: 13.5em;
+    font-size: var(--fontP);
 }
+
+/* Styling en positie van de links in de navigatiebalk*/ 
+
+a {
+    text-decoration: none;
+    line-height: 1.5em;
+    color: var(--TextColor);
+    font-size: var(--fontP);
+    
+}
+
+
+/* Zorgt ervoor dat de navigatiebalk naar beneden loopt*/
 
 .lay-out {
     display: flex;
@@ -21,30 +63,28 @@ header {
     justify-content: start;
 }
 
-nav { 
-    background: #dcdcdc;
-    width: 13.5em;
-}
-
-a {
-    text-decoration: none;
-    line-height: 1.5em;
-    color: black;
-    
-}
-
-ul {
-    display: flex;
-    flex-direction: column;
-    padding: 1em 1em;
-}
+/* zorgt voor de grootte en kleur van de main */
 
 main {
-    background-color: #ffffff;
+    background-color: var(--SecondaryBackground);
     width: 100%;
 }
 
+/* Past de font-size van h1 aan */
+
+h1{
+    font-size: var(--fontH1);
+}
+
+/* Past de font-size van h2 aan */
+
+h2, h3{
+    font-size: var(--fontH23);
+}
+
+/* Positie van de toepassing image */
 
 .toepassing img{
 margin-top: 15em;
 }
+

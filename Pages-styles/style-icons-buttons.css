@@ -5,8 +5,33 @@
     padding: 0;
 }
 
+:root {
+    --clr-dark: #333;
+    --clr-light:#FFFFFF;
+    --clr-primary: #F7A100;
+    --clr-primary-2:#0071B3;
+    --clr-secondary: #F8C463; 
+    --font-p: 16px; 
+    --font-h: 32px;
+}
+
+.dark-mode {
+    --clr-dark: #FFFFFF;
+    --clr-light: #333;
+    --clr-primary-2:#60C5F8;
+}
+
+.contrast-mode {
+    --clr-dark: #FFFFFF;
+    --clr-light:#FFFFFF;
+    --clr-secondary: #53241B;
+    --clr-primary: #321610;
+    --clr-primary-2: #115D92;
+    
+}
+
 body {
-    background: #ffffff;
+    background: var(--clr-light)        ;
     font-family:"Proxima Nova", sans-serif;
     margin: 0;
 }
@@ -38,7 +63,7 @@ header {
     flex-direction: row;
     justify-content: start;
     gap: 2em;
-    background: #F7A100;
+    background: var(--clr-primary);
     padding: 1em 1em;
 }
 
@@ -50,14 +75,14 @@ header {
 }
 
 nav { 
-    background: #F8C463;
+    background: var(--clr-secondary);
     width: 13.5em;
 }
 
 a {
     text-decoration: none;
     line-height: 1.5em;
-    color: black;  
+    color: var(--clr-dark);  
 }
 
 ul {
@@ -67,42 +92,47 @@ ul {
 }
 
 main {
-    background-color: #ffffff;
+    background-color: var(--clr-light);
     width: 100%;
 }
 
 h1 {
-    margin: 0em;
-    font-weight: bold;
+    color: var(--clr-dark);
+    margin: 0.5em;
+    font-size: var(--font-h);
 }
 
 h2 {
+    color: var(--clr-dark);
     margin-left: 1em;
-    margin-top: 2em;
-    font-size: 1.5em;
+    margin-top: 1em;
+    font-size: var(--font-h);
     font-weight: bold;
 }
 
 h3 {
+    color: var(--clr-dark);
     margin: 0em 0em 1em 1em;
-    font-size: 1.2em;
-    font-weight: lighter;
+    font-size: var(--font-p);
+    font-weight: bold;
 }
 
 h4 {
+    color: var(--clr-dark);
     margin: 0em 0em 1em 1em;
-    font-size: 1.5em;
+    font-size: var(--font-h);
     font-weight: bold;
 }
 
 p {
+    color: var(--clr-dark);
     margin: 1em;
     margin-top: 0;
-    font-size: 1em;
+    font-size: var(--font-p);
 }
 
 .heart, .account-human , .filled-heart {
-    color: #0071B3;
+    color: var(--clr-primary-2);
     height: 2em;
     margin: auto 5px;
     margin-left: 2em;
@@ -111,9 +141,7 @@ p {
 .filled-heart {
 position: absolute;
 left: 8em;
-top: 32.5em;
-
-
+top: 31em;
 }
 
 .socials {
@@ -125,7 +153,7 @@ top: 32.5em;
 }
 
 .theme-toggle, .theme-toggle-contrast {
-    color: #0071B3;
+    color: var(--clr-primary-2);
     height: 2em;
     margin: auto 5px;
     margin-left: 2em;
@@ -146,10 +174,10 @@ top: 32.5em;
 .search-button {
     margin-left: 2em;
     margin-bottom: 1em;
-    background:#0071B3;
+    background: var(--clr-primary-2);
     border: none;
     box-shadow: none;
-    color: #ffffff;
+    color: var(--clr-light);
     cursor: pointer;
     height: 3em;
     width: 5em;
@@ -160,7 +188,7 @@ form button {
     border-radius: 50%;
     border: none;
     aspect-ratio: 1 / 1;
-    color: #FFFFFF;
+    color: var(--clr-light);
     cursor: pointer;
     font-size: 16px;
     padding:0.1em;
@@ -176,12 +204,12 @@ form button:active {
 }
 
 .add-user {
-    color:#0071B3;
+    color: var(--clr-primary-2);
     height: 2em;
     margin: 2em;
     margin-top: 1em;
     background: none;
-    border: solid 0.2em #0071B3;
+    border: solid 0.2em var(--clr-primary-2);
     border-radius: 50%;
     aspect-ratio: 1/1;
     cursor: pointer;
@@ -190,19 +218,19 @@ form button:active {
 .popup {
     margin: 1em;
     margin-left: 2em;
-    background: #0071B3;
+    background: var(--clr-primary-2);
     border: none;
     box-shadow: none;
-    color: #ffffff;
+    color: var(--clr-light);
     cursor: pointer;
     height: 3em;
     width: 10em;
 }
 
 .close-button {
-    background-color: transparent;
+    background-color: none;
     border: 0em;
-    color: #333333;
+    color: var(--clr-dark);
     font-size: 2em;
     transition: all 0.2 ease-in;
     cursor: pointer;
@@ -211,8 +239,8 @@ form button:active {
 }
 
 .close-button:hover {
-    background-color: transparent;
-    color:#F7A100;
+    background-color: none;
+    color: var(--clr-dark);
 } 
 
 .place-comment {
