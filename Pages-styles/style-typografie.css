@@ -5,8 +5,19 @@
     padding: 0;
 }
 
+:root {
+    --primarycolor: #F7A100;
+    --secondarycolor: white;
+    --text-color: #333333;
+    --font-size-p: 16px;
+    --font-size-h: 32px;
+    --side-pages-color: #dcdcdc;
+    --header-color: #c3c3c3 ;
+}   
+
 body {
     font-family: 'Proxima Nova';
+    color: var(--text-color) ;
 }
 
 @font-face {
@@ -14,38 +25,18 @@ body {
     src: url("https://db.onlinewebfonts.com/t/264e2ce2df4ac93e29576716c566f827.woff2") format("woff2");
 }
 
-h1 {
-    padding-left: 10px;
-    padding-top: 10px;
-    /* font-family: "Proxima Nova A Semibold"; */
-}
-
-h2 {
+h1,h2,h3,p,ol {
     padding-left: 10px;
     padding-top: 10px;
 }
 
-h3 {
-    padding-left: 10px;
-    padding-top: 10px;
-}
-
-p {
-    padding-left: 10px;
-    padding-top: 10px;
-}
-
-ol {
-    padding-left: 10px;
-    padding-top: 10px;
-}
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: start;
     gap: 2em;
-    background: #c3c3c3;
+    background: var(--header-color);
     padding: 1em 1em;
 }
 
@@ -56,14 +47,14 @@ header {
 }
 
 nav { 
-    background: #dcdcdc;
+    background:var(--side-pages-color);
     width: 13.5em;
 }
 
 a {
     text-decoration: none;
     line-height: 1.5em;
-    color: black;
+    color: var(--text-color);
     
 }
 
@@ -74,6 +65,6 @@ ul {
 }
 
 main {
-    background-color: #ffffff;
+    background-color: var(--secondarycolor);
     width: 100%;
 }
