@@ -12,7 +12,7 @@
     --font-size-p: 16px;
     --font-size-h: 32px;
     --side-pages-color: #dcdcdc;
-    --header-color: #c3c3c3 ;
+    --header-color: #c3c3c3;
 }   
 
 body {
@@ -38,6 +38,7 @@ header {
     gap: 2em;
     background: var(--header-color);
     padding: 1em 1em;
+    font-size: var(--fontH1);
 }
 
 .lay-out {
