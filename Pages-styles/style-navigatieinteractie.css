@@ -11,10 +11,10 @@
     --text-color: #333333;
     --side-pages-color: #dcdcdc;
     --header-color: #c3c3c3 ;
-    --fontP: 16px;
-    --fontH1: 32px;
-    --fontH3: 24px;
-    --fontpre: 16px,
+    --small-text: 16px;
+    --larg-text: 32px;
+    --medium-text: 24px;
+    --fontpre-small-text: 16px,
 }
 
  /* Positie, afmetingen en kleur van de header*/
@@ -60,7 +60,7 @@ a {
     text-decoration: none;
     line-height: 1.5em;
     color: var(--text-color);
-    font-size: var(--fontP);
+    font-size: var(--small-text);
 }
 
 ul {
@@ -83,36 +83,27 @@ pre {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    --fontpre: 16px,
+    font-size: var(--fontpre-small-text);
     line-height: 1.4;
     overflow-x: auto;
-}
-
-/* Positie van de image */
-
-img {
-    margin: 10px;
 }
 
 /* Past de font-size van h1 aan */
 
 h1 {
-    font-size: var(--fontH1);
-    margin: 10px;
+    font-size: var(--larg-text);
 }
 
 /* Past de font-size van h2 aan */
 
 h2, h3 {
-    font-size: var(--fontH23);
-    margin: 10px;
+    font-size: var(--medium-text);
 }
 
 /* Past de font-size van p aan */
 
 p {
-    --fontP: 16px;
-    margin: 10px;
+    font-size: var(--small-text);
 }
 
 div.scroll-container {
@@ -126,4 +117,8 @@ div.scroll-container {
     padding: 10px;
     margin: 40px;
   }
+
+img, h1, h2, h3, p {
+    margin: 10px;
+}
 
